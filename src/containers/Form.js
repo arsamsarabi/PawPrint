@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import {
-  ImageSourcePropType,
   Alert,
   View,
   Modal,
@@ -16,7 +15,7 @@ import {
 import * as ImagePicker from "expo-image-picker";
 import Constants from "expo-constants";
 import * as Permissions from "expo-permissions";
-import Icon from "react-native-vector-icons/FontAwesome";
+import { FontAwesome } from "@expo/vector-icons";
 import { useSelector, useDispatch } from "react-redux";
 import {
   UPDATE_FORM_VALUE,
@@ -39,10 +38,7 @@ export const Form = () => {
     });
   };
 
-  const handleChange = (
-    name,
-    value
-  ) => {
+  const handleChange = (name, value) => {
     dispatch({
       type: UPDATE_FORM_VALUE,
       payload: {
@@ -175,14 +171,14 @@ export const Form = () => {
                 style={[styles.button, styles.cancelBtn]}
                 onPress={handleClose}
               >
-                <Icon name="times" size={24} color="#c0392bc0" />
+                <FontAwesome name="times" size={24} color="#c0392bc0" />
                 <Text style={[styles.btnText, styles.cancelText]}>Cancel</Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={[styles.button, styles.confirmBtn]}
                 onPress={isEditMode ? handleUpdate : handleConfirm}
               >
-                <Icon
+                <FontAwesome
                   name={isEditMode ? "check" : "plus"}
                   size={24}
                   color="#846d63"

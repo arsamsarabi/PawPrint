@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, StyleSheet, TouchableOpacity } from "react-native";
-import Icon from "react-native-vector-icons/FontAwesome";
+import { FontAwesome } from "@expo/vector-icons";
 
 export const Button = ({ text, icon, onClick, mode }) => {
-  const styles = (el) => {
+  const styles = el => {
     switch (mode) {
       case "Large":
         return largeBtnStyles[el];
@@ -15,7 +15,7 @@ export const Button = ({ text, icon, onClick, mode }) => {
   };
   return (
     <TouchableOpacity onPress={onClick} style={styles("actionBtn")}>
-      <Icon name={icon} size={24} color="#846d63" />
+      <FontAwesome name={icon} size={24} color="#846d63" />
       <Text style={styles("btnText")}>{text}</Text>
     </TouchableOpacity>
   );
