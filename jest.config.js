@@ -13,10 +13,6 @@ module.exports = {
       "|unimodules-permissions-interface" +
       "|expo-constants" +
       "|expo-permissions" +
-      "|@expo" +
-      "|expo-font" +
-      "|expo-asset" +
-      "|expo-file-system" +
       ")/)"
   ]
 };

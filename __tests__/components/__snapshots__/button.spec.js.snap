@@ -24,6 +24,7 @@ exports[`<Button /> Should render a large button 1`] = `
     }
   }
 >
+  times
   <Text
     style={
       Object {

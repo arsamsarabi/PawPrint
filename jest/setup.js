@@ -1,3 +1,5 @@
 jest.mock("react-native-vector-icons", () => ({
-  FontAwesome: () => jest.fn()
+  FontAwesome: ({ name }) => {
+    return name;
+  }
 }));
