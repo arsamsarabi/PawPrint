@@ -1,5 +1,6 @@
 module.exports = {
   preset: "react-native",
+  setupFiles: ["<rootDir>/jest/setup.js"],
   transformIgnorePatterns: [
     "node_modules/(?!(react-native" +
       "|react-navigation-tabs" +
@@ -13,7 +14,6 @@ module.exports = {
       "|expo-constants" +
       "|expo-permissions" +
       "|@expo" +
-      "|react-native-vector-icons" +
       "|expo-font" +
       "|expo-asset" +
       "|expo-file-system" +
