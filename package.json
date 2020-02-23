@@ -1,4 +1,9 @@
 {
+  "author": {
+    "name": "Arsam Sarabi",
+    "email": "arsamsarabi@me.com",
+    "url": "https://arsam.dev"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
